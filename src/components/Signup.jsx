@@ -32,7 +32,7 @@ function Signu() {
         }})}/>
         <p className='error'>{errors.EmailId?.message}</p>
 
-        <input className='inputs' type="Password" placeholder='Password' name='Password' {...register('Password',{required:"Password is required",mminLength:{
+        <input className='inputs' type="Password" placeholder='Password' name='Password' {...register('Password',{required:"Password is required",minLength:{
                 value: 10,
                 message:"Password must be less than 10"},
                 pattern:{
